@@ -10,6 +10,7 @@ inquirer
       type: "input",
       message: "Enter SVG text:",
       name: "text",
+      validate: (text)=> text.length <=3 || "Text must be less than 3 characters",
     },
     {
       type: "list",
